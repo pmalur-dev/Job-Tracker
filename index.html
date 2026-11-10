@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB TRACK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       
+    <!--Header-->
+
+    <header class="header">
+     <div class="logo">
+       <img src="images/logo.png" alt="JobTrack logo">
+       <h1 id="title">JobTrack</h1>
+     </div>
+       
+
+       <nav class="nav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#all-applications">Application</a>
+        <a href="#add-application">Add Application</a>
+        <a href="#profile">Profile</a>
+       </nav>
+
+    </header>
+
+    <!--Main-->
+   
+    <main class="main" id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Track your job applications in one place</p>
+
+     <div class="dashboard-cards">
+        <section>
+            <h3>Total Aplications</h3>
+            <p id="total-applications">0</p>
+        </section>
+
+        <section>
+            <h3>Interviews</h3>
+            <p id="interviews">0</p>    
+        </section>
+
+        <section>
+            <h3>Offers</h3>
+            <p id="offers">0</p>
+        </section>
+     </div>
+
+      <section class="recent-applications">
+        <h2>Recent Applications</h2>
+    
+        <article>
+            <h3>Google</h3>
+            <p>Software Engineer Intern</p>
+            <p>Status: <span class="status-badge">Applied</span></p>
+        </article>
+       
+     </section>
+     
+     
+     <section id="add-application" class="application-form-section">
+        <h2>Add Applicaton</h2>
+
+          <form id="application-form">
+           <fieldset>
+            <legend>Application Details</legend>
+            <label for="company">Company</label>
+            <input type="text" id="company" required>
+
+            <label for="position">Position</label>
+            <input type="text" id="position" required>
+
+            <label for="location">Location</label> 
+            <input type="text" id="location" required>
+
+            <label for="status">Status</label>
+            <select id="status" required>
+                <option value="applied">Applied</option>
+                <option value="interview">Interview</option>
+                <option value="offer">Offer</option>
+                <option value="rejected">Rejected</option>
+            </select>
+
+            <label for="date">Applied Date</label>
+            <input type="date" id="date" required>
+           </fieldset>
+            <button type="submit">Add Application</button>
+          </form>
+     </section>
+
+     <section id="all-applications" class="all-applications">
+        <h2>All Applications</h2>
+      
+        <ul id="application-list" class="application-list">
+         <li>No applicatons yet.</li>
+        </ul>
+     </section>
+
+     <section id="profile" class="profile-section">
+        <h2>Profile</h2>
+        <form id="profile-form">
+           <fieldset>
+            <legend>Personal Information</legend>  
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+           </fieldset>
+           
+           <fieldset>
+            <legend>Professional Information</legend>
+            <label for="profile-location">Location</label>
+            <input type="text" id="profile-location" required>   
+            
+            <label for="target-role">Target Role</label>
+            <input type="text" id="target-role" required>  
+            
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" required>   
+           </fieldset>
+            <button type="sumbit">Save Profile</button>
+        </form>
+     </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <p>
+            &copy; 2026 JobTrack. All rights reserved. 
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

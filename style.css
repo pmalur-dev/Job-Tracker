@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}                                             
+
+.header {
+    padding: 20px 40px;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.logo img {
+    height:50px;
+    width: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.main {
+    padding: 40px;
+}
+
+.main h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+
+}
+
+.main > p {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.dashboard-cards section {
+    flex: 1;
+    background-color:#ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.dashboard-cards h3 {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.dashboard-cards p {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.dashboard-cards section:hover {
+    transform: translateY(-3px);
+}
+
+.recent-applications {
+    margin-top: 40px;
+}
+
+.recent-applications article{
+    background-color:#ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.recent-applications article h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.recent-applications article p {
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #dbeafe;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight:500;
+    margin-left: 4px;
+}
+
+.recent-applications h2 {
+    margin-bottom: 15px;
+}
+
+.application-form-section h2 {
+    margin-top: 40px;
+}
+
+.application-form-section form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.application-form-section fieldset,
+.profile-section fieldset {
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    margin-bottom:20px;
+    border-radius: 8px;
+}
+
+.application-form-section label,
+.profile-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.application-form-section input,
+.application-form-section select, 
+.profile-section input, 
+.profile-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    font-size: 15px;
+}
+
+.application-form-section button, 
+.profile-section button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.application-form-section button:hover,
+.profile-section button:hover {
+    background-color: #1d4ed8;
+}
+
+.application-form-section legend {
+    padding: 0 8px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.application-form-section input:focus,
+.application-form-section select:focus,
+.profile-section input:focus,
+.profile-section select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.all-applications {
+    margin-top: 40px;
+}
+
+.application-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+.application-list li {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.application-list li + li {
+    margin-top: 15px;
+}
+
+.profile-section {
+    margin-top: 40px;
+}
+
+.profile-section h2 {
+    margin-bottom: 15px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .dashboard-cards{
+        flex-direction: column;
+    } 
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .main{
+    padding: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main h2 {
+        font-size: 26px;
+    }
+
+    .dashboard-cards section {
+        padding: 15px;
+    } 
+
+    .application-form-section button, 
+    .profile-section button {
+         width: 100%;
+    }
+
+    .application-list li {
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .application-form-section input, 
+    .application-form-section select,
+    .profile-section input,
+    .profile-section select {
+        padding: 12px;
+    }
+
+    .application-form-section fieldset,
+    .profile-section fieldset {
+        padding: 15px;
+    }
+
+}
